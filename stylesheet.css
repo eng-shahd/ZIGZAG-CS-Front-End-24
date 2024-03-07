@@ -1,0 +1,178 @@
+/* set up all web */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: outfit;
+}
+/* image style */
+.image  {
+    margin: 35px;
+    height: 450px;
+    width: 94%;
+    background-image: url(start_image.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+/* reponsive img for mobile width 375px  */
+@media only screen and (max-width: 375px) {
+    .image {
+        margin: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 350px;
+        border-radius: 0px;
+    }
+}
+/* contaner style  */
+.contaner{
+    margin:0 35px;
+}
+/* style all h1 itmes in page */
+.contaner h1{
+    font-family:young serif;
+    color:  hsl(24, 5%, 18%);
+    letter-spacing: 0.5px;
+    font-weight: 550;
+}
+/* style all h2 itmes in page */
+.contaner h2{
+    font-family:young serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+}
+/* style all b itmes in page */
+.contaner b{
+    color:hsl(30, 10%, 34%);
+    font-weight: 770;
+}
+/* style all p itmes in page */
+.contaner p{
+    color:hsl(30, 10%, 34%);
+    margin: 15px 0px;
+    line-height: 20px;
+    
+}
+/* style all ul itmes in page */
+.contaner ul{
+    padding:20px ;
+}
+/* style all ol itmes in page */
+.contaner ol{
+    padding:20px ;
+}
+ul li{
+    padding-left:10px ;
+}
+ol li{
+    padding-left:10px ;
+    margin-bottom: 10px;
+}
+/* style section1  */
+.section1{
+    background-color: hsl(330, 100%, 98%);
+    margin: 30px 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.section1 h3{
+    color:hsl(332, 51%, 32%);
+}
+
+.section1 li::marker{
+    color:hsl(332, 51%, 32%);
+    
+}
+.section1 li{
+    color: hsl(30, 10%, 34%);
+    line-height: 30px;
+    font-size: small;
+    
+}
+/* style section2  */
+.section2 h2{
+    margin-bottom: -6px;
+}
+.section2 li{
+    color: hsl(30, 10%, 34%);
+    line-height: 27px;
+    font-size: small;
+    ;
+}
+.section2 li::marker{
+    color: hsl(14, 45%, 36%);
+    
+}
+.section2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin: 0px 0px 20px 0px ;
+    
+}
+/* style section3  */
+
+.section3 li{
+    color:hsl(30, 10%, 34%);
+    line-height: 20px;
+    font-size:small ;
+}
+.section3 li::marker{
+    color: hsl(14, 45%, 36%);
+}
+.section3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin: -10px 0px 20px 0px ;
+    
+}
+/* style section4  */
+.section4 p{
+    font-size:small ;
+}
+/* table style  */
+.table{
+    width: 100%;
+    height: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+/* media responsive for the table  */
+@media only screen and (max-width: 375px) {
+    .table{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+.table b{
+    justify-items: center;
+    padding-top: 14.5px;
+    color: hsl(14, 45%, 36%);
+}
+.table p{
+    padding-left: 25px;
+}
+.table p::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin-top: 15px ;
+
+}
+.table b::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.25px;
+    background-color: hsl(30, 18%, 87%);
+    margin-top: 15px ;
+
+}
