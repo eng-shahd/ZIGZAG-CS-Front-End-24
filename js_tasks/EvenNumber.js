@@ -1,5 +1,5 @@
 // Enter the number of
-var number =prompt('Enter the number ')
+var number = 5 ;
 
 //check if  even number
 function even(number) {
