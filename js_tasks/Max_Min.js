@@ -1,9 +1,9 @@
 // Entering the numbers
 console.log('Enter 3 numbers');
 
-var num1 = parseInt(prompt('Enter first number'));
-var num3 = parseInt(prompt('Enter scond number'));
-var num4 = parseInt(prompt('Enter third number'));
+var num1 = 0;
+var num3 = 8;
+var num4 = 10 ;
 
 console.log( 'the numbers is ' , num1, num3, num4);
 console.log('the maximum number is ' + maxmium(num1, num3, num4));
