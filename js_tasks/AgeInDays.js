@@ -1,15 +1,9 @@
 console.log("A Project to convarte the age from days to years and months and days");
 
-//make a loop to use the programm more then one time
-while(true){
+
   // input the age in days
-let age= prompt("Enter your age in days: ");
+let age= 1000;
 ageInDays(age);
-let tryAgain= prompt("try again? if no enter 0 or press any key to continue");
-if (tryAgain==0){
-  break;
-}
-}
 
 function ageInDays(age){
 // calculate the age in years
