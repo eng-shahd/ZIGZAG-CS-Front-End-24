@@ -1,5 +1,5 @@
 // Enter the number
-var number = prompt("Enter the number");
+var number = 10;
 
 //calculate the sum
 var sum = 0;
