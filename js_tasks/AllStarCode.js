@@ -1,18 +1,17 @@
-//input the values
-let string = "Hello ";
-let character = "p";
-// function to count how many times the character is repeated
-function count(string , character) {
+function strCount(str, char) {
     let count = 0;
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === character) {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
             count++;
         }
     }
     return count;
 }
-//output the count
-console.log("the string  " + string + "the character  " + character );
+
+// Test cases
+console.log("the character  'o' repeated  " +strCount("Hello", 'o')+"   in  Hello"); 
 console.log("<=================================================>");
-let c = count(string, character);
-console.log("the character   " + character + "   repeated   " + c);
+console.log("the character  'l' repeated  " +strCount("Hello", 'l')+"   in  Hello"); 
+console.log("<=================================================>");
+console.log("the character  'z' repeated  " +strCount("", 'z')+ "   in  ''"); // returns 0
+
