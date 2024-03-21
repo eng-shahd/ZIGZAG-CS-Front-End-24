@@ -1,25 +1,31 @@
-// the pillars details
-let numPillars = 10;
-console.log("The number of the pillars is :  " + numPillars)
-
-let disPillars = 30  ;
-console.log("The distance between the pillars is :  " + disPillars +"  meters");
-
-let widthPillars = 10;
-console.log("The width of the pillars is :  " + widthPillars + "  centimeters\n");
-
-console.log("=====================================================\n");
-
-//the function to calculate the distance between the two pillars
-function calculate(numPillars, widthPillars,disPillars){
-    let n = numPillars;
-    let x = widthPillars;
-    let d = disPillars * 100;
+function pillars(numPill, dist, width) {
+    let n = numPill;
+    let d = dist * 100;
+    let x = width;
+    if (n == 1){
+        return 0;
+    }
+    else{
+    
     let disBetween = (d *(n-1))+ (x *(n-2));
 
     return disBetween ;
-    
+    }
 }
+//Sample test 
+console.log("The number of the pillars is : 1 " );
+console.log("The distance between the pillars is :10  ");
+console.log("The width of the pillars is :10  \n");
+console.log("the distance between "+ pillars(1,10,10)+"   centimeters");
+console.log("=====================================================\n");
 
-//print the distance
-console.log("the distance between the first and last pillar is:  "+ calculate(numPillars, widthPillars,disPillars) +"  centimeters");
+console.log("The number of the pillars is : 2 " )
+console.log("The distance between the pillars is :20  ")
+console.log("The width of the pillars is :25  \n")
+console.log("the distance between "+ pillars(2, 20, 25)+"   centimeters")
+console.log("=====================================================\n");
+
+console.log("The number of the pillars is : 11 " )
+console.log("The distance between the pillars is :15  ")
+console.log("The width of the pillars is :30  \n")
+console.log("the distance between "+pillars(11, 15, 30)+"   centimeters")
