@@ -1,24 +1,27 @@
-// input an array of strings
-let ideas =["good","good","good","good","bad","bad"];
-
-// function to count the ideas
-function countIdeas(ideas){
+function well(x){
     let count = 0;
-    for (let i = 0; i <= ideas.length; i++) {
-        if (ideas[i] === "good") {
+    for (let i = 0; i <= x.length; i++) {
+        if (x[i] === "good") {
             count++;
         }
     }
-    if (count === 1 && count === 2) {
-        return "publish"
+    if (count === 1 || count === 2) {
+        return "Publish!"
 }
     else if (count > 2 ) {
-        return "I smell a series !";
+        return "I smell a series!";
     }
     else
-    return "Fail";
-    
+    return "Fail!";
 }
-//print the result
-let result = countIdeas(ideas);
-console.log(result);
+
+//test
+console.log("this idea is :\n");
+console.log(well(['bad', 'bad', 'bad']));
+console.log("============================================\n");
+console.log("this idea is :\n");
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+console.log("============================================\n");
+console.log("this idea is :\n");
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+console.log("============================================\n");
