@@ -1,6 +1,9 @@
-//input the array
-let animal = ["tail","body","head"];
-//reverse the array using the built in reverse function
-let Re_arrange = animal.reverse();
-//output the array
-console.log(Re_arrange);
+function fixTheMeerkat(arr) {
+    let Re_arrange = arr.reverse();
+    return Re_arrange;
+  }
+  console.log(fixTheMeerkat(["tail", "body", "head"]));
+  console.log(fixTheMeerkat(["tails", "body", "heads"]));
+  console.log(fixTheMeerkat(["bottom", "middle", "top"]));
+  console.log(fixTheMeerkat(["lower legs", "torso", "upper legs"]));
+  console.log(fixTheMeerkat(["ground", "rainbow", "sky"]));
