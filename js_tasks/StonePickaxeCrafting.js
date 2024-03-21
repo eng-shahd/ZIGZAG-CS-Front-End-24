@@ -1,11 +1,14 @@
+
 // // dataSource
 let material1 = ["Sticks", "Sticks", "Cobblestone", "Cobblestone", "Cobblestone"];
 let material2 = [];
-let material3= ["Sticks", "Wool", "Cobblestone"];
-let material4 = ["Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Wool"];
+let material3= ["Sticks", "Wood", "Cobblestone"];
+let material4 = ["Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Wood"];
+let material5 = ["Sticks","Sticks","Sticks","Sticks","Cobblestone","Cobblestone","Cobblestone"]
+
 
 //function to count the number of stons
-function countStones(material) {
+function stonePick(material) {
     let Cobblestonecounter = 0;
     let Stickscounter = 0;
     let stone = 0;
@@ -13,7 +16,7 @@ function countStones(material) {
         if (material[i] === "Cobblestone") {
             Cobblestonecounter++;
         }
-        else if (material[i] === "Wool") {
+        else if (material[i] === "Wood") {
             Stickscounter+=4;
         }
         else if (material[i] === "Sticks") {
@@ -30,8 +33,10 @@ function countStones(material) {
 
 // call the function
 
-console.log( "the number of stones we can make from materia1 is     "+ countStones(material1));
-console.log( "the number of stones we can make from materia2 is     "+  countStones(material2));
-console.log( "the number of stones we can make from materia3 is     "+  countStones(material3));
-console.log( "the number of stones we can make from materia4 is     "+  countStones(material4));
+console.log( "the number of stones we can make from materia1 is     "+ stonePick(material1));
+console.log( "the number of stones we can make from materia2 is     "+  stonePick(material2));
+console.log( "the number of stones we can make from materia3 is     "+  stonePick(material3));
+console.log( "the number of stones we can make from materia4 is     "+  stonePick(material4));
+console.log( "the number of stones we can make from materia5 is     "+  stonePick(material5));
+
 
