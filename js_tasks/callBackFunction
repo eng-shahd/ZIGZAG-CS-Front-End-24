@@ -1,0 +1,9 @@
+function callBackFunction(callback) {
+    setTimeout(callback, 2000); 
+}
+
+function Callback() {
+    console.log("Callback invoked after 2 seconds");
+}
+
+callBackFunction(Callback);
